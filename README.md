@@ -14,7 +14,7 @@ source venv/bin/activate
 
 ## Install requirements
 ```
-pip install -r requirments.txts
+pip install -r requirments.txt
 ```
 ## Run the main.py file
 ```
