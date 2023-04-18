@@ -4,17 +4,20 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-# from undetected_chromedriver import C
 from webdriver_manager.chrome import ChromeDriverManager
-url = "https://play.google.com/store/apps/details?id=com.skyhealth.glucosebuddyfree"
 from selenium.webdriver.chrome.options import Options
-options = Options()
-# options.binary_location = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
-driver = webdriver.Chrome(chrome_options=options)
+url = "https://play.google.com/store/apps/details?id=com.skyhealth.glucosebuddyfree"
 
+# for linux
 
-# driver = webdriver.Chrome(ChromeDriverManager().install())
-# driver = webdriver.Chrome()
+# options = Options()
+# # options.binary_location = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+# driver = webdriver.Chrome(chrome_options=options)
+
+#for windows
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get(url)
 
